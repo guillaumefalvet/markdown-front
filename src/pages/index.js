@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const res = await fetch('http://localhost:3000');
+        const res = await fetch('https://markdown-back-production.up.railway.app/');
         const data = await res.json();
         setMarkdownContent(data);
       } catch (err) {
