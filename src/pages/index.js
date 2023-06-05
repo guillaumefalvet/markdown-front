@@ -33,8 +33,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <ReactMarkdown children={markdownContent} remarkPlugins={[remarkGfm]} />
-      </main>
+  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+    {markdownContent}
+  </ReactMarkdown>
+</main>
     </>
   )
 }
